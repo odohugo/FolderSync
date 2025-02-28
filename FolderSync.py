@@ -35,7 +35,6 @@ def main():
     else:
         run_periodically(args)
         
-    
     print("")
     input('Press Enter to finish.')
 
@@ -81,7 +80,7 @@ def copy_files(source, destination):
                 log_message(f"Copied file: {source_path} -> {destination}")
 
 
-# Checks if any files in destination folder do not have a corresponding file in the source folder with the same name
+# Checks if any files in destination folder do not have a corresponding file in the source folder with the same name and if so, deletes them
 def clear_destination(source, destination):
     for filename in os.listdir(destination):
         source_path = os.path.join(source, filename)
