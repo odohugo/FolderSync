@@ -36,7 +36,7 @@ def main():
         run_periodically(args)
         
     print("")
-    input('Press Enter to finish.')
+    input("Press Enter to finish.")
 
 
 def run_once(args):
@@ -106,7 +106,7 @@ def handle_errors(args):
         print("Destination folder is not a valid path.")
         sys.exit(1)
     if not os.path.isdir(args.log):
-        print("Destination folder is not a valid path.")
+        print("Log folder is not a valid path.")
         sys.exit(1)
 
     if args.source == args.destination:
